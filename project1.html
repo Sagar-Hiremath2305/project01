@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sagar - Spotify Music</title>
+  <link rel="stylesheet" href="project1style.css"/>
+  <script src="https://kit.fontawesome.com/338834cee5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body style="background-color: antiquewhite; color: black;">
+  <!-- Navigation bar -->
+  <nav class="navigation">
+    <ul>
+      <li class="brand"><img src="logo.png" alt="Spotify" width="70" />Spotify</li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Song list -->
+  <div class="Container">
+    <div class="songlist">
+      <h1>Songs</h1>
+      <div class="songitemContainer">
+        <div class="songitem">
+          <img src="sama.png" alt="1" width="15%" style="border-radius: 25px; margin: 10px 10px;" />
+          <span style="width: 60%;">Samajavaragamana</span>
+          <span class="songlistplay">
+            <span class="timestamp" style="width: 20%;">05:12</span>
+            <i class="fa-solid fa-circle-play songItemPlay" data-index="0" style="color: #f0f2f5;"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img src="nanna.png" alt="2" width="15%" style="border-radius: 25px; margin: 10px 10px;" />
+          <span style="width: 60%;">Nanna Preethi Sullalla</span>
+          <span class="songlistplay">
+            <span class="timestamp" style="width: 20%;">04:12</span>
+            <i class="fa-solid fa-circle-play songItemPlay" data-index="1" style="color: #f0f2f5;"></i>
+          </span>
+        </div>
+
+        <div class="songitem">
+          <img src="terliye.png" alt="3" width="15%" style="border-radius: 25px; margin: 10px 10px;" />
+          <span style="width: 60%;">Tere Liye</span>
+          <span class="songlistplay">
+            <span class="timestamp" style="width: 20%;">05:12</span>
+            <i class="fa-solid fa-circle-play songItemPlay" data-index="2" style="color: #f0f2f5;"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Player Controls -->
+  <div class="bottom">
+    <input type="range" class="range" id="myProgressbar" min="0" max="100" />
+    <div class="icons">
+      <i id="backward" class="fa-solid fa-backward-fast" style="color: #f0f3f5;"></i>
+      <i id="masterplay" class="fa-solid fa-circle-play" style="color: #f0f2f5;"></i>
+      <i id="forward" class="fa-solid fa-forward-fast" style="color: #f0f3f5;"></i>
+    </div>
+    <div class="songinfo" id="songTitle">Tere Liye</div>
+  </div>
+
+  <audio id="audio1"></audio>
+
+  <script src="project1script.js"></script>
+</body>
+</html>
